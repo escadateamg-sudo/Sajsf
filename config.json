@@ -1,0 +1,47 @@
+{
+  "paths": {
+    "users_file": "users.txt",
+    "messages_file": "messages.txt",
+    "apidata_file": "apidata.txt",
+    "proxies_file": "proxies.txt",
+    "sessions_dir": "sessions",
+    "sent_users_dir": "sent_users",
+    "logs_file": "telegram_sender.log"
+  },
+  "limits": {
+    "daily_limit": 25,
+    "min_delay": 5,
+    "max_delay": 15,
+    "quiet_hours": {
+      "enabled": true,
+      "start_hour": 23,
+      "end_hour": 7,
+      "delay_multiplier": 3.0
+    },
+    "burst_protection": {
+      "enabled": true,
+      "messages_per_burst": 10,
+      "burst_delay": 60
+    },
+    "accounts_per_proxy": 1,
+    "accounts_per_api": 30,
+    "max_concurrent_accounts": 3000,
+    "connection_timeout": 30,
+    "retry_attempts": 3,
+    "backoff_factor": 2.0
+  },
+  "settings": {
+    "emoji_probability": 0.3,
+    "flood_wait_threshold": 600,
+    "button": {
+      "text": "Перейти в бот",
+      "url": "https://t.me/EscadaRent_bot"
+    },
+    "adaptive_delays": {
+      "enabled": true,
+      "base_delay": 5,
+      "error_penalty": 10,
+      "success_bonus": -1
+    }
+  }
+}
